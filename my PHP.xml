@@ -1,0 +1,167 @@
+<templateSet group="my PHP">
+  <template name="?" value="&lt;?php $END$ ?&gt;" shortcut="ENTER" description="显示 &lt;?php ?&gt;代码片段" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="??" value="&lt;?php echo $END$; ?&gt;" shortcut="ENTER" description="输出 &lt;?php echo  ?&gt;代码片段" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="?fore" value="&lt;?php foreach ($ITERABLE$ as $VAR_VALUE$): ?&gt;&#10;    $END$&#10;&lt;?php endforeach ?&gt;" shortcut="ENTER" description="foreach(iterable_expr as $value) {...}" toReformat="false" toShortenFQNames="true">
+    <variable name="ITERABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR_VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="if" value="if ($CONDITION$) {&#10;&#10;}" shortcut="ENTER" description="if(){...}" toReformat="false" toShortenFQNames="true">
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="?msg" value="$GLOBALS['msg'] = '$TXT$';" shortcut="ENTER" description="$GLOBALS['msg'] = '';" toReformat="false" toShortenFQNames="true">
+    <variable name="TXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="?fn" value="function $NAME$($PARAMETERS$){&#10;    $END$&#10;}" shortcut="ENTER" description="function fn(){...}" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ifex" value="if(!$condition$) {&#10;    exit('&lt;h2&gt;$END$&lt;/h2&gt;');&#10;}&#10;" shortcut="ENTER" description="exit()函数" toReformat="false" toShortenFQNames="true">
+    <variable name="condition" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="?wh" value="&lt;?php while ($condition$): ?&gt;&#10;&#10;&lt;?php endwhile ?&gt;" shortcut="ENTER" description="while()" toReformat="false" toShortenFQNames="true">
+    <variable name="condition" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="r" value="return;" shortcut="ENTER" description="return;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="?re" value="require('$PATH$');" shortcut="ENTER" description="require('$name$');" toReformat="false" toShortenFQNames="true">
+    <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="?for" value="for ($INDEX$ = 0; $INDEX$ &lt; count($ARRAY$); $INDEX$++) {&#10;    $END$    &#10;}" shortcut="ENTER" description="for循环语句" toReformat="false" toShortenFQNames="true">
+    <variable name="INDEX" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARRAY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="?3" value="$VAR$ = ($CONDITION$) ? $VAL1$ : $VAL2$;" shortcut="ENTER" description="三目运算" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAL1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAL2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="?vd" value="var_dump($content$);" shortcut="ENTER" description="var_dump();" toReformat="false" toShortenFQNames="true">
+    <variable name="content" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="?he" value="header('Content-type: text/html; charset=utf-8');" shortcut="ENTER" description="header('Content-type: text/html; charset=utf-8');" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="r0" value="return 0;" shortcut="ENTER" description="return 0;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="r1" value="return 1;" shortcut="ENTER" description="return 1;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="rf" value="return false;" shortcut="ENTER" description="return false;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="rt" value="return true;" shortcut="ENTER" description="return true;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ro" value="return $object$;" shortcut="ENTER" description="return $value$;" toReformat="false" toShortenFQNames="true">
+    <variable name="object" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="?co" value="const $NAME$;" shortcut="ENTER" description="const $name$;" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="?coe" value="const $NAME$ = '$value$';" shortcut="ENTER" description="const $NAME$ = '$value$';" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="?if" value="&lt;?php if ($CONDITION$): ?&gt;&#10;        &#10;&lt;?php endif ?&gt;" shortcut="ENTER" description="&lt;?php if (): ?&gt;&lt;?php endif ?&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="?fork" value="&lt;?php foreach ($ITERABLE$ as $VAR_KEY$ =&gt; $VAR_VALUE$): ?&gt;&#10;    $END$&#10;&lt;?php endforeach ?&gt;" shortcut="ENTER" description="foreack( key =&gt; value )" toReformat="false" toShortenFQNames="true">
+    <variable name="ITERABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR_KEY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR_VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="r2" value="return -1;" shortcut="ENTER" description="return -1;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
